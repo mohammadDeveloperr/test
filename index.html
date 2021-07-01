@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Document</title>
     <style>
         #d1 {
@@ -28,6 +27,8 @@
 </head>
 
 <body>
+    
+    
     <button class="btn btn-primary" onclick="alli()">click me</button>
     <br>
     <div class="alert alert-success d1 alert-dismissible fade show" id="d1" role="alert">
@@ -38,33 +39,22 @@
         </button>
     </div>
 </body>
+    
+    
+    
+    
 <script>
     function alli() {
-
-        // Swal.fire(
-        //     'Good job!',
-        //     'You clicked the button!',
-        //     'success'
-        // )
-
         document.getElementById('d1').style.right = "" + 100 + "px";
-        // if () {
 
-        // }
-        //alert(document.getElementById('d1').style.right)
         setInterval(function() {
             document.getElementById('d1').style.display = 'block'
             document.getElementById('d1').style.right = "" - 700 + "px";
-            //  document.getElementById('d1').classList.add("d1")
+           
         }, 5000)
 
-
-
     }
-    // if (document.getElementById('d1').style.right == "" >
-    //     300 + "px") {
-    //     document.getElementById('d1').style.right = "" + -300 + "px";
-    // }
+  
 </script>
 
 </html>
